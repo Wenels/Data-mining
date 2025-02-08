@@ -1,0 +1,40 @@
+@relation accident_data
+
+@attribute location string
+@attribute time string
+@attribute weather {Clear, Rainy, Foggy, Snowy}
+@attribute road_condition {Dry, Wet, Icy, Snowy}
+@attribute vehicle_type {Car, Truck, Motorcycle, Bicycle, Bus}
+@attribute injury_severity {None, Minor, Major, Fatal}
+
+@data
+"Downtown", "Night", Clear, Dry, Car, Minor
+"Suburb", "Morning", Rainy, Wet, Truck, Major
+"Highway", "Afternoon", Foggy, Wet, Motorcycle, Fatal
+"City Center", "Evening", Snowy, Icy, Bus, Minor
+"Residential", "Night", Clear, Dry, Bicycle, None
+"Park", "Morning", Clear, Dry, Car, None
+"Suburb", "Afternoon", Snowy, Icy, Truck, Major
+"Highway", "Night", Foggy, Wet, Motorcycle, Minor
+"City Center", "Morning", Rainy, Wet, Bus, Fatal
+"Residential", "Evening", Clear, Dry, Bicycle, Minor
+"Downtown", "Morning", Rainy, Wet, Truck, Major
+"Suburb", "Night", Clear, Dry, Motorcycle, None
+"Highway", "Morning", Foggy, Snowy, Car, Minor
+"City Center", "Afternoon", Snowy, Wet, Bus, Major
+"Residential", "Evening", Rainy, Wet, Truck, Fatal
+"Park", "Night", Clear, Dry, Bicycle, None
+"Suburb", "Morning", Foggy, Icy, Car, Major
+"Highway", "Evening", Clear, Dry, Truck, Minor
+"City Center", "Afternoon", Rainy, Wet, Motorcycle, Major
+"Residential", "Night", Snowy, Wet, Bus, Fatal
+"Downtown", "Morning", Snowy, Snowy, Bicycle, Minor
+"Suburb", "Evening", Clear, Dry, Car, Major
+"Highway", "Afternoon", Rainy, Wet, Motorcycle, Fatal
+"City Center", "Night", Foggy, Dry, Truck, Minor
+"Residential", "Morning", Clear, Icy, Bus, Major
+"Park", "Afternoon", Snowy, Snowy, Car, None
+"Suburb", "Night", Clear, Wet, Truck, Fatal
+"Highway", "Morning", Rainy, Icy, Motorcycle, Minor
+"City Center", "Evening", Clear, Dry, Bus, Major
+"Residential", "Night", Foggy, Wet, Bicycle, Fatal
